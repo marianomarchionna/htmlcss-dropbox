@@ -18,7 +18,7 @@ button {
     vertical-align: middle;
 }
 
-a{
+header a{
     text-decoration: none;
 }
 
@@ -31,9 +31,22 @@ a{
     margin: 0 auto;
 }
 
+.w-60{
+    width: 60%;
+    margin: 0 auto;
+}
+
 .blue{
     background-color: #0061ff;
     color: white;
+}
+
+p{
+    display: inline-block;
+}
+
+h3{
+    font-size: 22px;
 }
 /* fine common */
 /* header  */
@@ -55,7 +68,7 @@ nav {
 
 nav a {
     display: inline-block;
-    padding-bottom: 10px;
+    padding-bottom: 26px;
     margin: 0 10px;
     color: black;
     line-height: 100%;
@@ -66,6 +79,7 @@ nav .logo:hover {
 }
 
 nav a:hover {
+    
     border-bottom: 1px solid black;
 }
 
@@ -108,7 +122,7 @@ main .slider{
     width: 30%;
 }
 
-.container-center p{
+.container-center .slider-text p{
     font-size: 16px;
     padding-top: 20px;
 }
@@ -119,8 +133,96 @@ main .slider{
     font-size: 18px;
 }
 
-.container-center i{
+.slider .container-center i{
     padding-top: 50px;
     font-size: 40px;
 }
 /* fine slider  */
+/* table  */
+.table{
+    padding-top: 200px;
+}
+
+.table h2{
+    font-size: 30px;
+}
+
+.table .fatturazione{
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.fatturazione input{
+    margin-right: 5px;
+}
+
+.fatturazione p{
+    display: inline;
+    padding-right: 20px;
+}
+
+.tabella{
+    width:  100%;
+    height: 1050px;
+}
+
+.tabella .col{
+    display: inline-block;
+    height: 100%;
+    width: 30%;
+    border: 1px solid #d3d3d6;
+    margin-top: 10px;
+}
+
+.tabella .center{
+    margin: 0 40px;
+}
+
+.tabella .intestazione{
+    border-bottom: 1px solid #d3d3d6;
+    text-align: center;
+}
+
+.tabella .col-dati{
+    width: 86%;
+    margin: 0 auto;
+}
+
+.col-dati h3{
+    margin: 20px 0;
+}
+
+.col-dati .durata{
+    margin-top: 15px;
+    margin-bottom: 40px;
+    color: gray;
+}
+
+.row-folder{
+    margin: 20px 0;
+}
+
+.row-pencil{
+    margin-bottom: 40px;
+}
+
+.buy-now{
+    margin: 20px 0;
+}
+
+hr{
+    border-radius: 1px solid #d3d3d6;
+    width: 25%;
+}
+
+.title-offerta{
+    margin-top: 40px ;
+}
+
+.check{
+    margin-top: 20px;
+}
+
+.check>i{
+    color: #0061ff ;
+}
