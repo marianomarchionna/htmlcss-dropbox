@@ -36,6 +36,11 @@ header a{
     margin: 0 auto;
 }
 
+.w-90{
+    width: 90%;
+    margin: 0 auto;
+}
+
 .blue{
     background-color: #0061ff;
     color: white;
@@ -48,6 +53,13 @@ p{
 h3{
     font-size: 22px;
 }
+
+.clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}
+ì
 /* fine common */
 /* header  */
 header{
@@ -163,15 +175,14 @@ main .slider{
 
 .tabella{
     width:  100%;
-    height: 1050px;
+    margin-top: 30px;
 }
 
 .tabella .col{
-    display: inline-block;
-    height: 100%;
-    width: 30%;
+    float: left;
+    height: 1050px;
+    width: calc(100% / 3 - 27px);
     border: 1px solid #d3d3d6;
-    margin-top: 10px;
 }
 
 .tabella .center{
@@ -179,12 +190,14 @@ main .slider{
 }
 
 .tabella .intestazione{
-    border-bottom: 1px solid #d3d3d6;
+    padding: 10px 0px;
     text-align: center;
+    font-weight: 600;
+    border-bottom: 1px solid #d3d3d6;
 }
 
 .tabella .col-dati{
-    width: 86%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -226,3 +239,27 @@ hr{
 .check>i{
     color: #0061ff ;
 }
+/* fine table  */
+/* seconda tabella  */
+#seconda-tabella{
+    border: 1px solid #d3d3d6;
+}
+
+#enterprise{
+    margin: 25px 0;
+}
+
+#contatta{
+    margin-bottom: 40px;
+}
+
+.table-70 {
+    float: left;
+    width: 70%;
+}
+
+.table-30 {
+    float: left;
+    width: 30%;
+}
+/* fine seconda tabella  */
