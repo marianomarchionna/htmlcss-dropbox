@@ -109,7 +109,6 @@ nav .logo:hover {
 }
 
 nav a:hover {
-    
     border-bottom: 1px solid black;
 }
 
@@ -434,4 +433,31 @@ hr{
 
 .colonna-center-contnent p{
     margin-bottom: 40px;
+}
+/* fine customer  */
+/* start  */
+#section-start{
+    background-color: #B4D0E7;
+    width: 100%;
+    color: rgb(103, 22, 57);
+    height: 300px;
+}
+
+.start-container{
+    padding: 100px 0;
+}
+
+.start-container .start-text{
+    width: 50%;
+    float: left;
+}
+
+.start-container .start-button{
+    width: 30%;
+    float: right;
+}
+
+.start-white{
+    background-color: white;
+    color: black;
 }
