@@ -347,7 +347,7 @@ hr{
 
 .customer-main{
     margin-top: 50px;
-    width: 100%;
+    width: 100vw;
 }
 
 .colonna .team img {
@@ -359,7 +359,7 @@ hr{
 .colonna .team {
     float: left;
     height: 13vw;
-    width: 13vw;
+    width: 50%;
     text-align: center;
     line-height: 13vw;
 }
@@ -408,7 +408,7 @@ hr{
 }
 
 .colonna-center{
-    width: 46vw;
+    width: 48vw;
     height: 26vw;
     background-color: rgb(245, 245, 245);
     margin: 0 auto;
