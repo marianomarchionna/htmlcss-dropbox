@@ -78,6 +78,11 @@ h3{
 .inline{
     display: inline-block;
 }
+
+.right{
+    float: right;
+    margin-right: 30px;
+}
 /* fine common */
 /* header  */
 header{
@@ -236,8 +241,8 @@ main .slider{
     margin: 20px 0;
 }
 
-hr{
-    border-radius: 1px solid #d3d3d6;
+.table-hr{
+    border: 1px solid #d3d3d6;
     width: 25%;
 }
 
@@ -460,4 +465,15 @@ hr{
 .start-white{
     background-color: white;
     color: black;
+}
+/* start */
+/* faq */
+.faq-title{
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.faq-hr{
+    border: 1px solid lightgray;
+    margin: 30px 0;
 }
