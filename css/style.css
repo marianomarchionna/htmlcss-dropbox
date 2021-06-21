@@ -477,3 +477,43 @@ main .slider{
     border: 1px solid lightgray;
     margin: 30px 0;
 }
+/* footer  */
+footer {
+    background-color: black;
+    width: 100%;
+    padding-top: 70px;
+}
+
+.footer-top {
+    width: 100%;
+}
+
+footer h3 {
+    color: white;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+footer ul li {
+    color: white;
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+.footer-section {
+    width: calc(100% / 5);
+    float: left;
+}
+
+footer .w-80 hr {
+    margin-top: 100px;
+    color: white;
+    width: 100px;
+}
+
+.footer-bottom {
+    color: grey;
+    padding: 50px 0px;
+    line-height: 30px;
+}
+/* footer terminato  */
