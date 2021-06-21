@@ -307,3 +307,28 @@ hr{
     width: 100%;
 }
 /* fine primo articolo */
+/* paragrafi */
+.paragrafi .row{
+    margin: 50px 0;
+}
+
+.row .col {
+    float: left;
+    position: relative;
+    width: calc(100% / 3 - 30px);
+}
+
+.row .center{
+    margin: 0 45px;
+}
+
+.paragrafi .row .col img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.row h3{
+    margin-bottom: 20px;
+}
+/* fine paragrafi  */
