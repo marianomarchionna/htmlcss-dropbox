@@ -3,82 +3,71 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 /* common */
 body{
     font-family: 'Open Sans',sans-serif;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 button {
     cursor: pointer;
     border: none;
 }
-
 .vertical-align-middle{
     vertical-align: middle;
 }
-
 header a{
     text-decoration: none;
 }
-
 .btn {
     padding: 8px 16px;
 }
-
+.btn:hover{
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.4);
+}
 .w-80{
     width: 80%;
     margin: 0 auto;
 }
-
 .w-60{
     width: 60%;
     margin: 0 auto;
 }
-
 .w-40{
     width: 40%;
     margin: 0 auto;
 }
-
 .w-90{
     width: 90%;
     margin: 0 auto;
 }
-
 .blue{
     background-color: #0061ff;
     color: white;
 }
-
 .white{
     background-color: white;
     color: black;
     border: 1px solid black;
 }
-
 p{
     display: inline-block;
 }
-
 h2{
     font-size: 35px;
 }
-
 h3{
     font-size: 22px;
 }
-
 .clearfix {
     content: '';
     display: table;
     clear: both;
 }
-
 .inline{
     display: inline-block;
 }
-
 .right{
     float: right;
     margin-right: 30px;
@@ -90,17 +79,16 @@ header{
     height: 70px;
     background-color: white;
     vertical-align: middle;
+    position: fixed;
+    z-index: 999;
 }
-
 header img {
     vertical-align: middle;
     margin-left: 10px ;
 }
-
 nav {
     line-height: 70px;
 }
-
 nav a {
     display: inline-block;
     padding-bottom: 26px;
@@ -108,37 +96,49 @@ nav a {
     color: black;
     line-height: 100%;
 }
-
 nav .logo:hover {
     border-bottom: 0px solid;
 }
-
-nav a:hover {
+nav>a:hover {
     border-bottom: 1px solid black;
 }
-
 .menu-left {
     height: 100%;
     float: left;
 }
-
+.slider-text a {
+    color: black;
+}
 .menu-right {
     height: 100%;
     float: right;
 }
-
 #start{
     margin-left: 10px;
     margin-right: 10px;
+}
+.menu-right .menu{
+    display: inline-block;
+}
+.menu-right .submenucontent {
+    position: absolute;
+    display: none;
+    min-width: 120px;
+    background-color: white;
+}
+.menu-right .submenucontent a,
+.menu-right .submenu:hover~.submenucontent,
+.menu-right .submenucontent:hover {
+    display: block;
 }
 /* fine header  */
 /* slider  */
 main .slider{
     background-color: #b4d0e7; 
-    height: 600px;
+    height: 750px;
+    padding-top: 100px;
     position: relative;
 }
-
 .container-center img{
     position: absolute;
     top: 80%;
@@ -146,27 +146,22 @@ main .slider{
     transform: translate(-50%, -50%);
     width: 60%;
 }
-
 .container-center h1{
     font-size: 63px;
     padding-top: 60px;
 }
-
 .container-center .slider-text{
     width: 30%;
 }
-
 .container-center .slider-text p{
     font-size: 16px;
     padding-top: 20px;
 }
-
 .container-center button{
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 18px;
 }
-
 .slider .container-center i{
     padding-top: 50px;
     font-size: 40px;
@@ -176,84 +171,67 @@ main .slider{
 .table{
     padding-top: 200px;
 }
-
 .table .fatturazione{
     margin-top: 20px;
     padding: 20px 0;
 }
-
 .fatturazione input{
     margin-right: 5px;
 }
-
 .fatturazione p{
     display: inline;
     padding-right: 20px;
 }
-
 .tabella{
     width:  100%;
     margin-top: 30px;
 }
-
 .tabella .col{
     float: left;
     height: 1050px;
-    width: calc(100% / 3 - 27px);
+    width: calc(100% / 3 - 30px);
     border: 1px solid #d3d3d6;
 }
-
 .tabella .center{
-    margin: 0 40px;
+    margin: 0 45px;
 }
-
 .tabella .intestazione{
     padding: 10px 0px;
     text-align: center;
     font-weight: 600;
     border-bottom: 1px solid #d3d3d6;
 }
-
 .tabella .col-dati{
     width: 85%;
     margin: 0 auto;
 }
-
 .col-dati h3{
     margin: 20px 0;
 }
-
 .col-dati .durata{
     margin-top: 15px;
     margin-bottom: 40px;
     color: gray;
 }
-
 .row-folder{
     margin: 20px 0;
 }
-
 .row-pencil{
     margin-bottom: 40px;
 }
-
 .buy-now{
     margin: 20px 0;
 }
-
 .table-hr{
     border: 1px solid #d3d3d6;
     width: 25%;
 }
-
 .title-offerta{
     margin-top: 40px ;
 }
-
 .check{
     margin-top: 20px;
 }
-
 .check>i{
     color: #0061ff ;
 }
@@ -262,25 +240,20 @@ main .slider{
 #seconda-tabella{
     border: 1px solid #d3d3d6;
 }
-
 #enterprise{
     margin: 25px 0;
 }
-
 #contatta{
     margin-bottom: 40px;
 }
-
 .table-70 {
     float: left;
     width: 70%;
 }
-
 .table-30 {
     float: left;
     width: 30%;
 }
-
 .table-70 p{
     margin-bottom: 20px;
 }
@@ -289,27 +262,22 @@ main .slider{
 #article{
     margin: 100px 0;
 }
-
 .table-60 {
     float: left;
     width: 60%;
     padding-right: 20px;
 }
-
 .table-40 {
     float: right;
     width: 40%;
     padding-left: 20px;
 }
-
 .table-40 h3{
     padding: 30px 0;
 }
-
 .table-40 p{
     padding-bottom: 30px;
 }
-
 #article img {
     width: 100%;
 }
@@ -318,23 +286,19 @@ main .slider{
 .paragrafi .row{
     margin: 50px 0;
 }
-
 .row .col {
     float: left;
     position: relative;
     width: calc(100% / 3 - 30px);
 }
-
 .row .center{
     margin: 0 45px;
 }
-
 .paragrafi .row .col img{
     position: relative;
     width: 100%;
     height: 100%;
 }
-
 .row h3{
     margin-bottom: 20px;
 }
@@ -343,99 +307,81 @@ main .slider{
 #customer {
     padding-top: 70px;
 }
-
 .customer-title h2{
     width: 50%;
     margin: 30px 0;
 }
-
 .customer-main{
     margin-top: 50px;
-    width: 100vw;
+    width: 100%;
 }
-
 .colonna .team img {
     width: 50%;
     vertical-align: middle;
     filter: invert(1);
 }
-
 .colonna .team {
     float: left;
-    height: 13vw;
+    height: 15vw;
     width: 50%;
     text-align: center;
-    line-height: 13vw;
+    line-height: 15vw;
 }
-
 .customer-main .colonna {
     float: left;
-    height: 26vw;
-    width: 26vw;
+    height: 30vw;
+    width: 30vw;
 }
-
 .customer-main .col-right{
     float: right;
 }
-
 .green{
     background-color: rgb(162, 211, 155);
     border: 10px solid rgb(194, 226, 190);
 }
-
 .brown{
     background-color: rgb(97, 8, 43);
 }
-
 .lightblue{
     background-color: rgb(0, 147, 206);
 }
-
 .red{
     background-color: rgb(255, 28, 28);
 }
-
 .darkred{
     background-color: rgb(213, 0, 31);
 }
-
 .turquoise{
     background-color: rgb(180, 208, 231);
 }
-
 .darkblue{
     background-color: rgb(13, 36, 129);
 }
-
 .yellow{
     background-color: rgb(255, 216, 48);
 }
-
 .colonna-center{
-    width: 48vw;
-    height: 26vw;
+    width: calc(100% - 60vw);
+    height: 30vw;
     background-color: rgb(245, 245, 245);
     margin: 0 auto;
     float: left;
+    overflow-y: auto;
 }
-
 .colonna-center-contnent{
     width: 80%;
     margin: 0 auto;
 }
-
 .colonna-center-contnent img{
     margin-top: 50px;
     margin-bottom: 20px;
     height: 50px;
 }
-
 .linea-col-center{
     width: 10%;
     border: 1px solid lightgrey;
     margin-bottom: 50px;
 }
-
 .colonna-center-contnent p{
     margin-bottom: 40px;
 }
@@ -447,21 +393,17 @@ main .slider{
     color: rgb(103, 22, 57);
     height: 300px;
 }
-
 .start-container{
     padding: 100px 0;
 }
-
 .start-container .start-text{
     width: 50%;
     float: left;
 }
-
 .start-container .start-button{
     width: 30%;
     float: right;
 }
-
 .start-white{
     background-color: white;
     color: black;
@@ -472,10 +414,26 @@ main .slider{
     padding-top: 100px;
     padding-bottom: 30px;
 }
-
 .faq-hr{
     border: 1px solid lightgray;
     margin: 30px 0;
+}
+.faq .fa-chevron-up {
+    float: right;
+    display: none;
+    margin-right: 30px;
+}
+.faq .faq-answer {
+    padding-top: 20px;
+    width: 70%;
+    display: none;
+}
+.faq:hover .fa-chevron-down {
+    display: none;
+}
+.faq:hover .faq-answer,
+.faq:hover .fa-chevron-up {
+    display: block;
 }
 /* footer  */
 footer {
